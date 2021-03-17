@@ -13,18 +13,15 @@ len = strlen(str);
 
 for(int i = 0; i < len; i++)
 {
-    if(str[i]==str[len-i-1])
+    if(str[i]!=str[len-i-1])
     {
-        rt = 1;
+        printf("Not a Palindrome\n");
+        return 0;
     }
-    else rt = 0;
+    
 }
-if(rt == 1)
-{
+
     printf("Palindrome\n");
-}
-else 
-    printf("Not a Palindrome\n");
 
 return 0;
 }
